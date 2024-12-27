@@ -1,4 +1,4 @@
-# AutumNeoVim
+# AutumNeoVim 🍂
 
 ## 🛠️ Installation
 
