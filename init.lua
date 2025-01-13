@@ -18,19 +18,19 @@ end
 require "lazy_setup"
 require "polish"
 
-local ls = require("luasnip")
+local ls = require "luasnip"
 
-vim.keymap.set({"i"}, "<C-Tab>", function() ls.expand() end, {silent = true})
-vim.keymap.set({"i", "s"}, "<S-Tab>", function() ls.jump( 1) end, {silent = true})
-vim.keymap.set({"i", "s"}, "<S-Tab>", function() ls.jump(-1) end, {silent = true})
+vim.keymap.set({ "i" }, "<C-Tab>", function() ls.expand() end, { silent = true })
+vim.keymap.set({ "i", "s" }, "<S-Tab>", function() ls.jump(1) end, { silent = true })
+vim.keymap.set({ "i", "s" }, "<S-Tab>", function() ls.jump(-1) end, { silent = true })
 
-vim.keymap.set({"i", "s"}, "<Tab>", function()
-	if ls.choice_active() then
-		ls.change_choice(1)
-	else 
-	    ls.jump(1)
-	end
-end, {silent = true})
+vim.keymap.set({ "i", "s" }, "<Tab>", function()
+  if ls.choice_active() then
+    ls.change_choice(1)
+  else
+    ls.jump(1)
+  end
+end, { silent = true })
 
 -- Load snippets from ~/.config/nvim/LuaSnip/
 ls.config.setup { -- Setting LuaSnip config
@@ -52,6 +52,8 @@ vim.o.foldexpr = "vimtex#fold#level(v:lnum)"
 vim.o.foldtext = "vimtex#fold#text()"
 -- I like to see at least the content of the sections upon opening
 vim.o.foldlevel = 2
+
+vim.g.maplocalleader = ","
 
 local lspconfig = require "lspconfig"
 lspconfig.texlab.setup {}
