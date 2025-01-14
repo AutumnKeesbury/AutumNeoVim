@@ -88,9 +88,10 @@ return {
   {
     "iurimateus/luasnip-latex-snippets.nvim",
     config = function()
-        require("luasnip-latex-snippets").setup { use_treesitter = true }
+        require("luasnip-latex-snippets").setup { use_treesitter = false }
         -- or setup({)
         require("luasnip").config.setup { enable_autosnippets = true }
     end,
 },
+
 }

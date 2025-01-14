@@ -11,6 +11,8 @@ return {
   {import="astrocommunity.code-runner.compiler-nvim"},
   {import = "astrocommunity.colorscheme.melange-nvim"},
   {import = "astrocommunity.colorscheme.catppuccin"},
-  {import = "astrocommunity.markdown-and-latex.vimtex"}
+  {import = "astrocommunity.markdown-and-latex.vimtex"},
+  {import = "astrocommunity.code-runner.compiler-nvim"}
+  
   -- import/override with your plugins folder
 }
