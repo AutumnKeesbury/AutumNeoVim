@@ -8,15 +8,14 @@ return {
   {import = "astrocommunity.pack.lua"},
   {import = "astrocommunity.pack.java"},
   {import = "astrocommunity.pack.julia"},
-  {import="astrocommunity.code-runner.compiler-nvim"},
+  {import = "astrocommunity.colorscheme.gruvbox-baby"},
+  {import = "astrocommunity.code-runner.compiler-nvim"},
   {import = "astrocommunity.colorscheme.melange-nvim"},
-  {import = "astrocommunity.colorscheme.catppuccin"},
   {import = "astrocommunity.markdown-and-latex.vimtex"},
   {import = "astrocommunity.code-runner.compiler-nvim"},
   {import = "astrocommunity.completion.cmp-latex-symbols"},
   {import = "astrocommunity.media.pets-nvim"},
   {import = "astrocommunity.completion.cmp-cmdline"},
   {import = "astrocommunity.utility.noice-nvim"},
-  
   -- import/override with your plugins folder
 }

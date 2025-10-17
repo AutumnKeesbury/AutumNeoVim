@@ -49,6 +49,9 @@ require("luasnip.loaders.from_lua").lazy_load { paths = "~/.config/nvim/LuaSnip/
 vim.o.foldmethod = "expr"
 vim.o.foldexpr = "vimtex#fold#level(v:lnum)"
 vim.o.foldtext = "vimtex#fold#text()"
+-- vim.cmd[[
+--    autocmd! BufWritePost *.tex normal ,ll
+--]]
 -- I like to see at least the content of the sections upon opening
 vim.o.foldlevel = 2
 
@@ -74,7 +77,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
     vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
   end,
 })
-
 local cmp = require "cmp"
 cmp.setup {
   sources = cmp.config.sources {
