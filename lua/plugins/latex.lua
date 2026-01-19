@@ -4,7 +4,7 @@ return {
     lazy = false,
     init = function()
       vim.cmd [[
-            let g:vimtex_view_method = 'zathura'
+            let g:vimtex_view_method = 'skim'
             let g:vimtex_view_general_options = '-r @line @pdf @tex'
             let g:vimtex_compiler_method = 'latexmk'
             let g:vimtex_compiler_latexmk_engines = {
@@ -22,3 +22,4 @@ return {
     },
   },
 }
+
